@@ -3,7 +3,7 @@
     <groupId>com.github.javafaker</groupId>
     <artifactId>javafaker</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.3</version>
     <name>Java Faker</name>
     <description>
     	This library is a port of Ruby's stympy/faker gem (as well as Perl's Data::Faker library) that generates fake data.
@@ -53,8 +53,7 @@
         <dependency>
             <groupId>org.yaml</groupId>
             <artifactId>snakeyaml</artifactId>
-            <version>1.26</version>
-            <classifier>android</classifier>
+            <version>2.2</version>
         </dependency>
         <dependency>
             <groupId>com.github.mifmif</groupId>
@@ -108,13 +107,12 @@
 		<pluginManagement>
 			<plugins>
 				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.7.0</version>
-					<configuration>
-						<source>1.6</source>
-						<target>1.6</target>
-					</configuration>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.12.1</version>
+                    <configuration>
+                        <release>17</release>
+                    </configuration>
 				</plugin>
                 <plugin>
                     <groupId>org.eluder.coveralls</groupId>
